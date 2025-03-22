@@ -1,10 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Carinhosa</title>
+    <style>
+        /* Definir um estilo global para garantir que o texto fique centralizado */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Cor de fundo suave */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
 
-    <html>
-    <body>
-        <h1>Oi, Amor!</h1>
-        <p>Essa � uma mensagem de amor do meu cora��o para o seu!</p>
-        <img src="C:/Users/Felipe Alexandre/OneDrive/�rea de Trabalho/Calipe app/Dia da Neve.jpeg" alt="Dia da Neve com meu amor" style="width:300px;height:400px;">
-        <p>Eu te amo muito, minha vida! <3</p>
-    </body>
-    </html>
-    
+        /* Estilo da caixa de texto */
+        .content {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 500px; /* Garantir uma largura adequada */
+            font-size: 1.2em;
+        }
+
+        /* Estilo para a fonte e a cor vermelha */
+        .message {
+            font-family: 'Brush Script MT', cursive; /* Fonte cursiva */
+            color: red; /* Cor vermelha */
+            font-size: 1.8em; /* Aumentar o tamanho da fonte */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Imagem */
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="message">
+            Meu amor, eu estou tão feliz por ter você ao meu lado. Cada momento que passamos juntos me faz perceber o quão sortudo sou por te ter como minha namorada.
+            Esses 7 meses foram incríveis, e sei que o melhor ainda está por vir! Estou muito orgulhoso de nós dois e da nossa caminhada, e mal posso esperar para celebrar o 8º mês com você.
+            Te amo muito! 💖
+        </div>
+
+        <!-- Foto -->
+        <img src="{{ url_for('static', filename='Dia-da-Neve.jpeg') }}" alt="Nossa foto" class="image">
+    </div>
+
+</body>
+</html>

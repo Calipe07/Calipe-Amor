@@ -1,62 +1,59 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Carinhosa</title>
+    <title>Mensagem de Amor</title>
     <style>
-        /* Definir um estilo global para garantir que o texto fique centralizado */
+        /* Aplica a imagem de fundo */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0; /* Cor de fundo suave */
             font-family: 'Arial', sans-serif;
             text-align: center;
+            background-image: url('Dia da Neve.jpeg'); /* A imagem de fundo */
+            background-size: cover; /* Faz com que a imagem cubra toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Cor do texto branca para contraste */
         }
 
-        /* Estilo da caixa de texto */
         .content {
-            background-color: #ffffff;
-            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-            width: 500px; /* Garantir uma largura adequada */
-            font-size: 1.2em;
-        }
-
-        /* Estilo para a fonte e a cor vermelha */
-        .message {
-            font-family: 'Brush Script MT', cursive; /* Fonte cursiva */
-            color: red; /* Cor vermelha */
-            font-size: 1.8em; /* Aumentar o tamanho da fonte */
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        /* Imagem */
-        .image {
-            max-width: 100%;
-            height: auto;
             border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para facilitar a leitura */
+        }
+
+        .message {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 1.5;
+            font-family: 'Arial', sans-serif;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: 'Cursive', sans-serif;
+            font-size: 2.5em;
+            color: red; /* Cor vermelha para o título */
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-
     <div class="content">
         <div class="message">
-            Meu amor, eu estou tão feliz por ter você ao meu lado. Cada momento que passamos juntos me faz perceber o quão sortudo sou por te ter como minha namorada.
-            Esses 7 meses foram incríveis, e sei que o melhor ainda está por vir! Estou muito orgulhoso de nós dois e da nossa caminhada, e mal posso esperar para celebrar o 8º mês com você.
+            <h2>Minha amada, quero te dizer o quanto você é importante para mim!</h2>
+            Estou tão feliz por ter você ao meu lado. Cada momento que passamos juntos me faz perceber o quão sortudo sou por te ter como minha namorada.
+            Esses 7 meses foram incríveis, e sei que o melhor ainda está por vir! Estou muito orgulhoso de nós dois e da nossa caminhada, e mal posso esperar para celebrar o 8º mês de muitos pela frente com você.
+            Te amo muito! 
             Te amo muito! 💖
         </div>
-
-        <!-- Foto -->
-        <img src="{{ url_for('static', filename='Dia-da-Neve.jpeg') }}" alt="Nossa foto" class="image">
     </div>
-
 </body>
 </html>
